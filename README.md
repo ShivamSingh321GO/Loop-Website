@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Loop — The Organization Operating System
 
-## Getting Started
+> **The modern operating system for institutions, universities, communities, and clubs.**  
+> Unifies mobile member engagement with desktop administrative governance on one encrypted platform.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- **Dual-Platform Architecture**:
+  - **Loop App (iOS)**: Encrypted chat, 15-second time-decay rotating QR check-ins, event discovery, dynamic forms, and 6-mode role navigation.
+  - **Loop Workspace (Desktop Superadmin)**: Multi-stage sequential approval pipelines, hierarchical budget controls, auditorium/venue reservation locking, and CSV roster onboarding.
+- **Client-Side Sealed Privacy**: Sensitive fields are encrypted on-device via AES-256 GCM before network transmission. Cloud databases store only unreadable ciphertext.
+- **Enterprise Governance**: 5-tier organizational hierarchy (Institutions $\rightarrow$ Chapters $\rightarrow$ Units $\rightarrow$ Sub-groups $\rightarrow$ Members) with deterministic Row-Level Security (RLS).
+- **Compliance & Transparency**: Built for Apple App Store Connect compliance (Guideline 5.1.1(v) account deletion, Guideline 1.2 UGC moderation, EAR 740.17(b)(1) encryption mass-market exemption).
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **Library**: React 19
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Typography**: Geist Sans & Geist Mono
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.18+ or later
+- npm or pnpm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/ShivamSingh321GO/Loop-Website.git
+cd Loop-Website
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🗺️ Site Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Route | Description |
+| :--- | :--- |
+| `/` | Landing page featuring Hero with 4K kinetic logo animation, interactive QR simulator, 4-step approval stepper, features grid, hierarchy visualizer, and role switcher |
+| `/privacy-security` | Unified Trust Center (App Privacy Nutrition Label, Cryptography Architecture, App Store Compliance) |
+| `/universities` | Campus life, student government, faculty advisors, and venue management |
+| `/organizations` | Distributed non-profits, enterprise ERGs, and CSV roster onboarding |
+| `/security` | Cryptographic specifications, AES-GCM 256, HKDF-SHA256, and zero-trust design |
+| `/privacy` | Public Privacy Policy & App Store Nutrition breakdown |
+| `/terms` | Terms of Service, EULA, and Guideline 1.2 UGC moderation policy |
+| `/support` | Help Desk, Guideline 5.1.1(v) account deletion guide, and contact desk |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary © 2026 Loop. All rights reserved.
