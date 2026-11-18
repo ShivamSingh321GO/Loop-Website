@@ -18,8 +18,11 @@ export const metadata: Metadata = {
   description:
     "Structure your hierarchy, automate multi-stage approvals, safeguard member privacy with client-side encryption, and empower decentralized teams — all in one unified platform.",
   icons: {
-    icon: "/Loop-logo.jpeg",
-    apple: "/Loop-logo.jpeg",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
   },
   keywords: [
     "organization management",
